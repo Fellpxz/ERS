@@ -1,0 +1,148 @@
+@media (max-width: 995px) {
+    #about{
+        padding-block: 10rem;
+    }
+    
+    #about .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #about .content{
+        width: 98%;
+    }
+
+    #about .content h1{
+        margin-bottom: 1.7rem;
+    }
+
+    #about .content img{
+        align-self: center;
+        width: 25%;
+        height: 10%;
+    }
+
+    .image-holder{
+        display: none;
+    }
+
+    #about .cel-image-holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 8rem;
+    }
+
+    #about .cel-image-holder img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+@media(min-width: 996px) and (max-width: 1200px) {
+    #about .image-holder{
+        width: 60%;
+    }
+    #about .content{
+        padding-top: 0;
+        width: 40%;
+    }
+
+    #about .content h1{
+        font-size: 2.5rem;
+    }
+
+    #about .content img{
+        width: 24%;
+        height: 7rem;
+    }
+
+    #about .content p{ 
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 996px) {
+    #about .cel-image-holder{
+        display: none;
+    }
+}
+
+@media (min-width: 766px){
+    #main-header .open, .close{
+        display: none;
+    }
+}
+
+@media(max-width: 765px) {
+    body.expanded > :not(header){
+        visibility: hidden;
+    }
+
+    body.expanded{
+        overflow: hidden;
+        width: 100vw;
+        width: 100vh;
+        background-color: black;
+        z-index: 100;
+    }
+
+    body.expanded #main-header .container{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vw;
+        align-items: baseline;
+    }
+
+    body.expanded #main-header .logo-box{
+        display: none;
+    }
+
+    body.expanded #main-header .open{
+        display: none;
+    }
+
+
+    body.expanded #main-header .close{
+        display: inline-block;
+        background-color: transparent ;
+        border: none;
+        width: fit-content;
+    }
+
+    body.expanded #main-header ul{  
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+        padding-left: 0.5rem;
+        gap: 6rem;
+    }
+
+    body.expanded #main-header li a{
+        font-size: 2rem;
+    }
+
+    #main-header .container nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    #main-header .open{
+        background-color: transparent !important;
+        border: none;
+    }
+
+    #main-header ul{
+        display: none;
+    }
+
+    #main-header .close{
+        display: none;
+    }
+
+    #main-header .logo-box img{
+        width: 3.5rem;
+    }
+}
