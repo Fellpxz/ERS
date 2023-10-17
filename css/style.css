@@ -71,7 +71,6 @@ ul{
   position: absolute;
 }
 
-
 /*-- HEADER --*/
 
 #main-header{
@@ -141,7 +140,7 @@ ul{
 }
 
 #hero-page .container h2{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -189,7 +188,8 @@ ul{
 
 /*-- ABOUT US --*/
 #about{
-  padding-block: 15rem;
+  background-color: rgb(231, 232, 233);
+  padding-block: 20rem;
 }
 
 #about .container{
@@ -201,14 +201,19 @@ ul{
   position: relative;
 }
 
-#about .image-holder img{
+#about .image-holder img {
   width: 70%;
   position: absolute;
-
-  border: solid 1rem white;
-  border-radius: 2rem;
-
+  border-radius: 1rem;
   cursor: pointer;
+
+  /* Adicione sombreamento aqui */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+}
+
+#about .image-holder img:hover {
+  transform: scale(1.05); /* Aumenta a escala em 10% no hover */
 }
 
 .upper{
@@ -229,7 +234,7 @@ ul{
 }
 
 #about .content h2{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -246,49 +251,94 @@ ul{
 }
 
 #about .content p{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
-#services .services-list{
+#services{
+  background-color: rgb(231, 232, 233);
+  position: relative;
+  padding-block: 20rem;
+}
+
+#services .container{
   display: flex;
-  justify-content: center;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 15rem;
 }
 
-#services .services-list .services-card{
-  width: 26%;
-  padding: 4rem 1rem;
-  border: 1px solid #000000;
-
+#services .services-header{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  gap: 2rem;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.line{
-  width: 32%;
-  height: 0.3rem;
-  background-color: rgb(134, 191, 196);
+#services .services-header h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-#services .services-list .services-card .icon{
-  border: 1px solid #000000;
-  padding: 3rem 3rem;
-  border-radius: 50%;
-  background-color: rgb(134, 191, 196);
-}
-
-#services .services-list .services-card .icon i{
-  font-size: 4rem;
-  color: #000000;
-}
-
-#services .services-card p{
-  width: 60%;
+#services .services-header h1{
+  font-family: 'belfast', sans-serif;
+  font-size: 3rem;
   text-align: center;
-  color: white !important;
+  width: 60%;
+}
+
+#services .services-header p{
+  font-size: 1.3rem;
+  text-align: center;
+  width: 60%;
+}
+
+#services .services-list{
+  background-color: transparent !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+#services .services-list .card{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  border: none;
+
+  width: 35%;
+  background-color: transparent !important;
+}
+
+#services .services-list .card i{
+  font-size: 3.5rem;
+}
+
+#services .services-list .card .right{
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.4rem;
+}
+
+#services .services-list .card h1{
+  font-family: 'belfast', sans-serif;
+  padding-top: 0.1rem;
+  font-weight: 700;
+}
+
+#services .services-header h1::after {
+  content: "";
+  display: block;
+  width: 21rem; /* Escolha o tamanho que desejar */
+  height: 2px; /* Escolha a espessura da linha */
+  background-color: #000; /* Escolha a cor que preferir */
+  margin: 0 auto;
+  margin-top: 1.6rem; /* Ajuste para controlar a distância entre o título e a linha */
+  margin-bottom: 1rem;
+}
+
+
+#services .services-list .card p{
+  font-size: 1.3rem;
+  width: 70%;
 }

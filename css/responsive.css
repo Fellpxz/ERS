@@ -145,6 +145,35 @@
     #main-header .logo-box img{
         width: 3.5rem;
     }
+
+    #services{
+        padding-top: 10rem;
+    }
+
+    #services .container .services-header h1{
+        width: 100%;
+    }
+
+    #services .container .services-header p{
+        width: 80%;
+    }
+
+    #services .container .services-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 4rem;
+    }
+
+    #services .container .services-list .card{
+        width: 60%;
+    }
+
+    #services .container .services-list .card p{
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 576px) {
