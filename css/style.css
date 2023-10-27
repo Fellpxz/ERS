@@ -161,7 +161,7 @@ ul{
 #hero-page .container p{
   padding-top: 2rem;
   width: 40%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .custom-button{
@@ -172,6 +172,9 @@ ul{
   text-transform: uppercase; 
   cursor: pointer; 
   transition: all 0.3s linear;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .custom-button:hover{
@@ -179,51 +182,27 @@ ul{
   transform: scale(1.05);
 }
 
-
-.custom-button a{
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(255, 254, 254);
-}
-
 /*-- ABOUT US --*/
 #about{
-  background-color: rgb(231, 232, 233);
-  padding-block: 20rem;
+  background-color: rgb(238, 240, 241);
+
 }
 
 #about .container{
   display: flex;
+  gap: 5rem;
+  padding-block: 30rem; 
 }
 
 #about .image-holder{
   width: 50%;
-  position: relative;
 }
 
 #about .image-holder img {
-  width: 70%;
-  position: absolute;
-  border-radius: 1rem;
-  cursor: pointer;
-
-  /* Adicione sombreamento aqui */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: all 0.6s;
+  width: 100%;
 }
 
-#about .image-holder img:hover {
-  transform: scale(1.05); /* Aumenta a escala em 10% no hover */
-}
 
-.upper{
-  z-index: 10;
-}
-
-#about .image-holder img:nth-child(2){
-  right: 8rem;
-  top: 17rem;
-}
 
 #about .content{
   display: flex;
@@ -254,16 +233,17 @@ ul{
   font-size: 1.2rem;
 }
 
+/*-- SERVICES --*/
+
 #services{
-  background-color: rgb(231, 232, 233);
-  position: relative;
-  padding-block: 20rem;
+  background-color: rgb(230, 235, 240);
 }
 
 #services .container{
   display: flex;
   flex-direction: column;
   gap: 15rem;
+  padding-block: 25rem;
 }
 
 #services .services-header{
@@ -342,3 +322,50 @@ ul{
   font-size: 1.3rem;
   width: 70%;
 }
+
+/*-- CONTACT --*/
+#contact{
+  background-color: rgb(238, 240, 241);
+}
+
+#contact .container{
+  display: flex;
+  flex-direction: row;
+}
+
+/*-- CONTACT CONTENT --*/
+#contact .content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact .content h1{
+  font-family: 'belfast', sans-serif;
+  font-size: 4rem;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+
+#contact .content .custom-button{
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+#contact .content p{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+#contact .content i{
+  font-size: 2rem;
+}
+
+#contact img{
+  width: 50%;
+}
+
+

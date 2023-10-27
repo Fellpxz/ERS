@@ -1,11 +1,10 @@
 @media (max-width: 995px) {
-    #about{
-        padding-block: 10rem;
-    }
     
     #about .container{
         flex-direction: column-reverse;
         align-items: center;
+        padding-block: 15rem;
+        gap: 10rem;
     }
 
     #about .content{
@@ -17,28 +16,54 @@
     }
 
     #about .content img{
-        align-self: center;
+        margin-top: 2rem;
         width: 25%;
         height: 10%;
     }
 
-    .image-holder{
-        display: none;
-    }
 
-    #about .cel-image-holder{
+    #about .image-holder{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding-top: 8rem;
     }
 
-    #about .cel-image-holder img{
-        width: 100%;
-        border-radius: 1rem;
+    #services .container{
+        padding-block: 15rem;
     }
+
+    #services .container .services-header p{
+        width: 80%;
+    }
+
+    #services .container .services-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 4rem;
+    }
+
+    #services .container .services-list .card{
+        width: 60%;
+    }
+
+    #services .container .services-list .card p{
+        width: 100%;
+    }
+
+    #contact .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact img{
+        width: 90%;
+    }
+    
 }
+
 
 @media(min-width: 996px) and (max-width: 1200px) {
     #about .image-holder{
@@ -63,11 +88,13 @@
     }
 }
 
+
 @media (min-width: 996px) {
     #about .cel-image-holder{
         display: none;
     }
 }
+
 
 @media (min-width: 766px){
     #main-header .open, .close{
@@ -153,27 +180,6 @@
     #services .container .services-header h1{
         width: 100%;
     }
-
-    #services .container .services-header p{
-        width: 80%;
-    }
-
-    #services .container .services-list{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        gap: 4rem;
-    }
-
-    #services .container .services-list .card{
-        width: 60%;
-    }
-
-    #services .container .services-list .card p{
-        width: 100%;
-    }
-
 }
 
 @media (max-width: 576px) {
@@ -190,6 +196,6 @@
     }
 
     #hero-page .container p{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }

@@ -79,8 +79,8 @@
         <ul>
           <li><a class="blue" href="#hero-page" onclick="closeMenu()">HOME</a></li>
           <li><a href="#about" onclick="closeMenu()">ABOUT US</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+          <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
         </ul>
       </nav>
     </div>  
@@ -96,18 +96,14 @@
       <h1 class="blue">negócios!</h1>
     </div>
     <p>Através do conhecimento de mercado aliado às melhores práticas SAP, a ERS IT proporcionará todo suporte necessário para que sua empresa faça o melhor uso do que o SAP pode oferecer.</p>
-    <button class="custom-button"><a href="#">Contact Us</a></button>
+    <a class="custom-button"  href="mailto:admin@ers-it.com">Contact Us</a>
     </div>
   </section>
   <!-- About Us Section -->
   <section id="about">
     <div class="container">
       <div class="image-holder">
-        <img id="image1" src="./img/Two partners working.jpg" alt="Dois colegas trabalhando junto no computador">
         <img id="image2" src="./img/man-working-with-infographics-indoors.jpg" alt="Homem analisando um info-gráfico">
-      </div>
-      <div class="cel-image-holder">
-        <img src="./img/Two partners working.jpg" alt="">
       </div>
       <div class="content">
         <h2>Quem somos?</h2>
@@ -156,9 +152,20 @@
             <p>Atuamos na implementação de soluções SAP e suporte da sua operação, caso sua empresa já trabalhe com soluções SAP.</p>
           </div>
         </div>
-
       </div>
     </div>
+
+    <section id="contact">
+      <div class="container">
+        <div class="content">
+          <h1>Entre em contato com a gente!</h1>
+          <p><i class="fa-solid fa-location-dot"></i>R. Amauri Souza, 346</p>
+          <p><i class="fa-solid fa-envelope"></i>admin@ers-it.com</p>
+          <a class="custom-button" href="mailto:admin@ers-it.com">Contact Us</a>
+        </div>
+        <img src="./img/businesspeople-working-together.jpg" alt="">
+      </div>
+    </section>
   </section>
   <!-- Javascript -->
   <script src="./js/script.js"></script>
