@@ -230,7 +230,7 @@ ul{
 }
 
 #about .content p{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /*-- SERVICES --*/
@@ -369,3 +369,83 @@ ul{
 }
 
 
+footer{
+  background-color: black;
+  padding-block: 8rem;
+  color: white;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container .company{
+  width: 33%;
+}
+
+footer .container .locations{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rem;
+}
+
+footer .container .socials{
+  width: 33%;
+  display: flex;
+  flex-direction: column ;
+  padding-left: 25rem;
+}
+
+footer .container .logo-box{
+  padding-bottom: 7.5rem;
+}
+
+footer .container p{
+  font-size: 1.2rem;
+}
+
+footer .container .company p{
+  padding-left: 1rem;
+}
+
+footer .container h2{
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  text-decoration: underline;
+}
+
+footer .container .locations p{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .container .locations p i{
+  font-size: 2rem;
+}
+
+footer .container .locations p:nth-child(2){
+  width: 100%;
+}
+
+footer .container .locations p:nth-child(3){
+  margin-bottom: 2.5rem;
+}
+
+footer .container .socials ul{
+  padding-top: 1rem;
+  display: flex;
+  gap: 3rem;
+  padding-left: 0;
+}
+
+footer .container .socials ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
