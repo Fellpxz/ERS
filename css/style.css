@@ -323,6 +323,49 @@ ul{
   width: 70%;
 }
 
+
+/*-- COLLABORATORS --*/
+
+#collaborators .container{
+  padding-top: 0;
+  gap: 10rem;
+}
+
+#collaborators h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#collaborators .collaborators-header h1{
+  font-family: 'belfast', sans-serif;
+  font-size: 3rem;
+}
+
+#collaborators .holder-collaborators{
+  display: flex;
+}
+
+#collaborators .parceiros{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10rem;
+}
+
+#collaborators .clientes{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  
+}
+
+#collaborators img{
+  width: 25%;
+}
+
 /*-- CONTACT --*/
 #contact{
   background-color: rgb(238, 240, 241);
